@@ -13,6 +13,8 @@
 		483C31CA215522BD00D05452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483C31C9215522BD00D05452 /* Assets.xcassets */; };
 		483C31CD215522BD00D05452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483C31CB215522BD00D05452 /* LaunchScreen.storyboard */; };
 		483C31D8215522BE00D05452 /* MathPowerMVVMCRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483C31D7215522BE00D05452 /* MathPowerMVVMCRxTests.swift */; };
+		8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */; };
+		8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4FF62577AC781F23F6B8E2 /* Pods-MathPowerMVVMCRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.debug.xcconfig"; sourceTree = "<group>"; };
 		483C31BF215522B900D05452 /* MathPowerMVVMCRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathPowerMVVMCRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483C31C2215522B900D05452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		483C31C4215522B900D05452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		483C31D3215522BE00D05452 /* MathPowerMVVMCRxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathPowerMVVMCRxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483C31D7215522BE00D05452 /* MathPowerMVVMCRxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPowerMVVMCRxTests.swift; sourceTree = "<group>"; };
 		483C31D9215522BE00D05452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.release.xcconfig"; sourceTree = "<group>"; };
+		B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C752882800D7C736648FB54A /* Pods-MathPowerMVVMCRxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				483C31C1215522B900D05452 /* MathPowerMVVMCRx */,
 				483C31D6215522BE00D05452 /* MathPowerMVVMCRxTests */,
 				483C31C0215522B900D05452 /* Products */,
+				74E2EED83E53AEF1632F6DB0 /* Pods */,
+				A62B65F0CE1EE128A006DEC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = MathPowerMVVMCRxTests;
 			sourceTree = "<group>";
 		};
+		74E2EED83E53AEF1632F6DB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B4FF62577AC781F23F6B8E2 /* Pods-MathPowerMVVMCRx.debug.xcconfig */,
+				B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */,
+				B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */,
+				C752882800D7C736648FB54A /* Pods-MathPowerMVVMCRxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A62B65F0CE1EE128A006DEC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */,
+				E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 483C31DC215522BE00D05452 /* Build configuration list for PBXNativeTarget "MathPowerMVVMCRx" */;
 			buildPhases = (
+				3946CE550F3516D594008CB3 /* [CP] Check Pods Manifest.lock */,
 				483C31BB215522B900D05452 /* Sources */,
+				488F409A2155290E003ADDA3 /* ShellScript */,
 				483C31BC215522B900D05452 /* Frameworks */,
 				483C31BD215522B900D05452 /* Resources */,
+				2B9353E95764F2F80273922F /* [CP] Embed Pods Frameworks */,
+				D5987095E0E67F2F002D9431 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 483C31DF215522BE00D05452 /* Build configuration list for PBXNativeTarget "MathPowerMVVMCRxTests" */;
 			buildPhases = (
+				38FEF3908AA9D5CE24B96885 /* [CP] Check Pods Manifest.lock */,
 				483C31CF215522BE00D05452 /* Sources */,
 				483C31D0215522BE00D05452 /* Frameworks */,
 				483C31D1215522BE00D05452 /* Resources */,
+				C6B4C614F991056CA63BB97E /* [CP] Embed Pods Frameworks */,
+				D2FC877D9B2ADF0D5F2C7903 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +230,131 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B9353E95764F2F80273922F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38FEF3908AA9D5CE24B96885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathPowerMVVMCRxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3946CE550F3516D594008CB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathPowerMVVMCRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		488F409A2155290E003ADDA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --strict\n";
+		};
+		C6B4C614F991056CA63BB97E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FC877D9B2ADF0D5F2C7903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5987095E0E67F2F002D9431 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		483C31BB215522B900D05452 /* Sources */ = {
@@ -291,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,42 +522,51 @@
 		};
 		483C31DD215522BE00D05452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FF62577AC781F23F6B8E2 /* Pods-MathPowerMVVMCRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VGC6AR5XL;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = MathPowerMVVMCRx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aleksandri0.MathPowerMVVMCRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		483C31DE215522BE00D05452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VGC6AR5XL;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = MathPowerMVVMCRx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aleksandri0.MathPowerMVVMCRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		483C31E0215522BE00D05452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +588,7 @@
 		};
 		483C31E1215522BE00D05452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C752882800D7C736648FB54A /* Pods-MathPowerMVVMCRxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
