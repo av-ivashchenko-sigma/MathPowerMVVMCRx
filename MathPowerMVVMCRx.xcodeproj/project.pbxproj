@@ -27,6 +27,15 @@
 		48B7F8A521592A2D00B05804 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8A221592A2D00B05804 /* Colors.swift */; };
 		48B7F8A621592A2D00B05804 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8A321592A2D00B05804 /* LocalizableStrings.swift */; };
 		48B7F8A821592A3400B05804 /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48B7F8A721592A3400B05804 /* Colors.xml */; };
+		48B7F8AC2159328C00B05804 /* Action+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8AB2159328C00B05804 /* Action+Extensions.swift */; };
+		48B7F8AF215932EC00B05804 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8AE215932EC00B05804 /* Functions.swift */; };
+		48B7F8B32159344E00B05804 /* ScoreboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B22159344E00B05804 /* ScoreboardCoordinator.swift */; };
+		48B7F8B5215935FF00B05804 /* ScoreboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */; };
+		48B7F8B7215936CB00B05804 /* ScoreboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B6215936CB00B05804 /* ScoreboardScreen.swift */; };
+		48B7F8BB215936FE00B05804 /* StartGameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B8215936FE00B05804 /* StartGameCoordinator.swift */; };
+		48B7F8BC215936FE00B05804 /* StartGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */; };
+		48B7F8BD215936FE00B05804 /* StartGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8BA215936FE00B05804 /* StartGameScreen.swift */; };
+		48B7F8BF2159388100B05804 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8BE2159388100B05804 /* CoordinatorFactory.swift */; };
 		8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */; };
 		8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +78,15 @@
 		48B7F8A221592A2D00B05804 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		48B7F8A321592A2D00B05804 /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		48B7F8A721592A3400B05804 /* Colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Colors.xml; sourceTree = "<group>"; };
+		48B7F8AB2159328C00B05804 /* Action+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Action+Extensions.swift"; sourceTree = "<group>"; };
+		48B7F8AE215932EC00B05804 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		48B7F8B22159344E00B05804 /* ScoreboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardCoordinator.swift; sourceTree = "<group>"; };
+		48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewModel.swift; sourceTree = "<group>"; };
+		48B7F8B6215936CB00B05804 /* ScoreboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardScreen.swift; sourceTree = "<group>"; };
+		48B7F8B8215936FE00B05804 /* StartGameCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameCoordinator.swift; sourceTree = "<group>"; };
+		48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewModel.swift; sourceTree = "<group>"; };
+		48B7F8BA215936FE00B05804 /* StartGameScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScreen.swift; sourceTree = "<group>"; };
+		48B7F8BE2159388100B05804 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.release.xcconfig"; sourceTree = "<group>"; };
 		B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +141,7 @@
 			children = (
 				48B7F86F2158E3C400B05804 /* Base */,
 				4870852D21552DB800E10566 /* Scenes */,
+				48B7F8A92159327400B05804 /* Misc */,
 				4870852C21552D6600E10566 /* Resources */,
 			);
 			path = MathPowerMVVMCRx;
@@ -156,6 +175,8 @@
 				483C31C2215522B900D05452 /* AppDelegate.swift */,
 				48B7F8772159047800B05804 /* AppCoordinator.swift */,
 				48B7F8722158ED5300B05804 /* Menu */,
+				48B7F8B02159342400B05804 /* StartGame */,
+				48B7F8B12159342D00B05804 /* Scoreboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -166,6 +187,7 @@
 				48B7F8702158E3D000B05804 /* Coordinator.swift */,
 				48B7F87A2159061300B05804 /* ScreenFactory.swift */,
 				48B7F87D2159124400B05804 /* ViewModelFactory.swift */,
+				48B7F8BE2159388100B05804 /* CoordinatorFactory.swift */,
 				48B7F8812159135E00B05804 /* Screen.swift */,
 				48B7F8832159157500B05804 /* ViewModel.swift */,
 			);
@@ -190,6 +212,51 @@
 				48B7F8A321592A2D00B05804 /* LocalizableStrings.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		48B7F8A92159327400B05804 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8AD215932E200B05804 /* Classes */,
+				48B7F8AA2159328000B05804 /* Extensions */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		48B7F8AA2159328000B05804 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8AB2159328C00B05804 /* Action+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		48B7F8AD215932E200B05804 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8AE215932EC00B05804 /* Functions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		48B7F8B02159342400B05804 /* StartGame */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8B8215936FE00B05804 /* StartGameCoordinator.swift */,
+				48B7F8BA215936FE00B05804 /* StartGameScreen.swift */,
+				48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */,
+			);
+			path = StartGame;
+			sourceTree = "<group>";
+		};
+		48B7F8B12159342D00B05804 /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8B22159344E00B05804 /* ScoreboardCoordinator.swift */,
+				48B7F8B6215936CB00B05804 /* ScoreboardScreen.swift */,
+				48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */,
+			);
+			path = Scoreboard;
 			sourceTree = "<group>";
 		};
 		74E2EED83E53AEF1632F6DB0 /* Pods */ = {
@@ -469,18 +536,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B7F8BB215936FE00B05804 /* StartGameCoordinator.swift in Sources */,
 				48B7F8842159157500B05804 /* ViewModel.swift in Sources */,
+				48B7F8AC2159328C00B05804 /* Action+Extensions.swift in Sources */,
 				48B7F8A521592A2D00B05804 /* Colors.swift in Sources */,
 				48B7F8A421592A2D00B05804 /* Assets.swift in Sources */,
 				483C31C3215522B900D05452 /* AppDelegate.swift in Sources */,
 				48B7F87B2159061300B05804 /* ScreenFactory.swift in Sources */,
 				48B7F8742158EDA800B05804 /* MenuCoordinator.swift in Sources */,
+				48B7F8BC215936FE00B05804 /* StartGameViewModel.swift in Sources */,
+				48B7F8BF2159388100B05804 /* CoordinatorFactory.swift in Sources */,
 				48B7F8782159047800B05804 /* AppCoordinator.swift in Sources */,
+				48B7F8B5215935FF00B05804 /* ScoreboardViewModel.swift in Sources */,
+				48B7F8AF215932EC00B05804 /* Functions.swift in Sources */,
 				48B7F8712158E3D000B05804 /* Coordinator.swift in Sources */,
+				48B7F8B7215936CB00B05804 /* ScoreboardScreen.swift in Sources */,
 				48B7F876215903EF00B05804 /* MenuScreen.swift in Sources */,
 				48B7F87E2159124400B05804 /* ViewModelFactory.swift in Sources */,
+				48B7F8BD215936FE00B05804 /* StartGameScreen.swift in Sources */,
 				48B7F8802159129000B05804 /* MenuViewModel.swift in Sources */,
 				48B7F8822159135E00B05804 /* Screen.swift in Sources */,
+				48B7F8B32159344E00B05804 /* ScoreboardCoordinator.swift in Sources */,
 				48B7F8A621592A2D00B05804 /* LocalizableStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

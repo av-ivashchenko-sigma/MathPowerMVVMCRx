@@ -5,7 +5,6 @@ import ReactiveCocoa
 import SnapKit
 
 class MenuScreen: Screen {
-
     private let titleLabel = UILabel()
     private let startGameButton = UIButton()
     private let scoreboardButton = UIButton()
