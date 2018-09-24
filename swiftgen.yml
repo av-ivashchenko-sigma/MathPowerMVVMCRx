@@ -1,0 +1,20 @@
+input_dir: MathPowerMVVMCRx/Resources/
+output_dir: MathPowerMVVMCRx/Resources/Generated/
+strings:
+  - paths: Base.lproj/Localizable.strings
+    templateName: structured-swift4
+    output: LocalizableStrings.swift
+    params:
+      enumName: L
+xcassets:
+  - paths: Assets.xcassets
+    output: Assets.swift
+    templateName: swift4
+    params:
+      enumName: I
+colors:
+  - paths: Colors.xml
+    output: Colors.swift
+    templateName: swift4
+    params:
+      enumName: C

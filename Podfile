@@ -7,6 +7,7 @@ target 'MathPowerMVVMCRx' do
   pod 'ReactiveSwift'
   pod 'ReactiveCocoa'
   pod 'SwiftLint'
+  pod 'SwiftGen', '5.3.0'
   pod 'SnapKit', '~> 4.0.0'
 
   target 'MathPowerMVVMCRxTests' do

@@ -5,12 +5,14 @@ PODS:
     - Result (~> 4.0)
   - Result (4.0.0)
   - SnapKit (4.0.0)
+  - SwiftGen (5.3.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - ReactiveCocoa
   - ReactiveSwift
   - SnapKit (~> 4.0.0)
+  - SwiftGen (= 5.3.0)
   - SwiftLint
 
 SPEC CHECKSUMS:
@@ -18,8 +20,9 @@ SPEC CHECKSUMS:
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: fad6614301fefd2b4a343fcca05280a6b5aeaaaa
+PODFILE CHECKSUM: 2c0a7de4077e76746c128f8c93e6d964f6f8c1cc
 
 COCOAPODS: 1.4.0
