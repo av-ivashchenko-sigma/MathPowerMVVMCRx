@@ -31,12 +31,12 @@ private extension MenuScreen {
     }
     func setupStyle() {
         view.backgroundColor = .white
-        titleLabel.font = UIFont.systemFont(ofSize: 20)
+        titleLabel.font = UIFont.captionLabelFont
         titleLabel.textColor = .black
 
         [startGameButton, scoreboardButton].forEach {
             $0.setTitleColor(.black, for: .normal)
-            $0.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+            $0.titleLabel?.font = UIFont.inputFont
         }
     }
 

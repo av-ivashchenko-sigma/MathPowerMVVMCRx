@@ -8,6 +8,15 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 internal enum L {
 
+  internal enum Difficulty {
+    /// Easy
+    internal static let easy = L.tr("Localizable", "difficulty.easy")
+    /// Hard
+    internal static let hard = L.tr("Localizable", "difficulty.hard")
+    /// Medium
+    internal static let medium = L.tr("Localizable", "difficulty.medium")
+  }
+
   internal enum Menu {
     /// Math Power
     internal static let logoTitle = L.tr("Localizable", "menu.logo_title")
@@ -25,6 +34,14 @@ internal enum L {
   }
 
   internal enum StartGame {
+    /// Choose game difficulty?
+    internal static let difficultyCaptionLabelText = L.tr("Localizable", "start_game.difficulty_caption_label_text")
+    /// What's your name?
+    internal static let nameCaptionLabelText = L.tr("Localizable", "start_game.name_caption_label_text")
+    /// Name
+    internal static let nameLabelPlaceholderText = L.tr("Localizable", "start_game.name_label_placeholder_text")
+    /// Start Game
+    internal static let startButtonText = L.tr("Localizable", "start_game.start_button_text")
     /// Start Game
     internal static let title = L.tr("Localizable", "start_game.title")
   }

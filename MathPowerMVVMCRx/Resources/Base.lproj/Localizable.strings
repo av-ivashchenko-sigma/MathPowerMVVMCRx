@@ -4,8 +4,17 @@
 "menu.start_game_title" = "Start Game";
 "menu.scoreboard_title" = "Scoreboard";
 
-//Scoreboard Screen
+// Start Game Screen
+"start_game.title" = "Start Game";
+"start_game.name_caption_label_text" = "What's your name?";
+"start_game.name_label_placeholder_text" = "Name";
+"start_game.difficulty_caption_label_text" = "Choose game difficulty?";
+"start_game.start_button_text" = "Start Game";
+
+// Scoreboard Screen
 "scoreboard.title" = "Scoreboard";
 
-//Start Game Screen
-"start_game.title" = "Start Game";
+// Difficulty
+"difficulty.easy" = "Easy";
+"difficulty.medium" = "Medium";
+"difficulty.hard" = "Hard";

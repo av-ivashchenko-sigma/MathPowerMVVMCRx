@@ -39,6 +39,9 @@
 		48B7F8C1215A364700B05804 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C0215A364700B05804 /* DI.swift */; };
 		48B7F8C3215A371F00B05804 /* DI+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C2215A371F00B05804 /* DI+App.swift */; };
 		48B7F8C5215A376200B05804 /* Container+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C4215A376200B05804 /* Container+Assembly.swift */; };
+		48B7F8C7215A65A300B05804 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C6215A65A300B05804 /* UIFont+Extensions.swift */; };
+		48B7F8CA215A6FE300B05804 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C9215A6FE300B05804 /* Difficulty.swift */; };
+		48B7F8CE215A75E300B05804 /* Difficulty+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */; };
 		8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */; };
 		8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +96,9 @@
 		48B7F8C0215A364700B05804 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		48B7F8C2215A371F00B05804 /* DI+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI+App.swift"; sourceTree = "<group>"; };
 		48B7F8C4215A376200B05804 /* Container+Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Assembly.swift"; sourceTree = "<group>"; };
+		48B7F8C6215A65A300B05804 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		48B7F8C9215A6FE300B05804 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Difficulty+Extensions.swift"; sourceTree = "<group>"; };
 		8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.release.xcconfig"; sourceTree = "<group>"; };
 		B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 				48B7F8AB2159328C00B05804 /* Action+Extensions.swift */,
 				48B7F8C2215A371F00B05804 /* DI+App.swift */,
 				48B7F8C4215A376200B05804 /* Container+Assembly.swift */,
+				48B7F8C6215A65A300B05804 /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +258,7 @@
 		48B7F8B02159342400B05804 /* StartGame */ = {
 			isa = PBXGroup;
 			children = (
+				48B7F8C8215A6FCE00B05804 /* Models */,
 				48B7F8B8215936FE00B05804 /* StartGameCoordinator.swift */,
 				48B7F8BA215936FE00B05804 /* StartGameScreen.swift */,
 				48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */,
@@ -266,6 +274,31 @@
 				48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */,
 			);
 			path = Scoreboard;
+			sourceTree = "<group>";
+		};
+		48B7F8C8215A6FCE00B05804 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8CB215A6FE700B05804 /* Classes */,
+				48B7F8CC215A700A00B05804 /* Extensions */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48B7F8CB215A6FE700B05804 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8C9215A6FE300B05804 /* Difficulty.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		48B7F8CC215A700A00B05804 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		74E2EED83E53AEF1632F6DB0 /* Pods */ = {
@@ -551,11 +584,13 @@
 				48B7F8C1215A364700B05804 /* DI.swift in Sources */,
 				48B7F87B2159061300B05804 /* ScreenFactory.swift in Sources */,
 				48B7F8C3215A371F00B05804 /* DI+App.swift in Sources */,
+				48B7F8C7215A65A300B05804 /* UIFont+Extensions.swift in Sources */,
 				48B7F8742158EDA800B05804 /* MenuCoordinator.swift in Sources */,
 				48B7F8BC215936FE00B05804 /* StartGameViewModel.swift in Sources */,
 				48B7F8BF2159388100B05804 /* CoordinatorFactory.swift in Sources */,
 				48B7F8782159047800B05804 /* AppCoordinator.swift in Sources */,
 				48B7F8B5215935FF00B05804 /* ScoreboardViewModel.swift in Sources */,
+				48B7F8CE215A75E300B05804 /* Difficulty+Extensions.swift in Sources */,
 				48B7F8AF215932EC00B05804 /* Functions.swift in Sources */,
 				48B7F8712158E3D000B05804 /* Coordinator.swift in Sources */,
 				48B7F8B7215936CB00B05804 /* ScoreboardScreen.swift in Sources */,
@@ -563,6 +598,7 @@
 				48B7F87E2159124400B05804 /* ViewModelFactory.swift in Sources */,
 				48B7F8BD215936FE00B05804 /* StartGameScreen.swift in Sources */,
 				48B7F8802159129000B05804 /* MenuViewModel.swift in Sources */,
+				48B7F8CA215A6FE300B05804 /* Difficulty.swift in Sources */,
 				48B7F8822159135E00B05804 /* Screen.swift in Sources */,
 				48B7F8B32159344E00B05804 /* ScoreboardCoordinator.swift in Sources */,
 				48B7F8A621592A2D00B05804 /* LocalizableStrings.swift in Sources */,
