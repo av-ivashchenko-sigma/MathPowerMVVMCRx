@@ -17,7 +17,7 @@ class StartGameScreen: Screen {
                                                                  target: nil,
                                                                  action: nil)
     private let difficultyCaptionLabel = UILabel()
-    private let difficultyTextField = UITextField()
+    private let difficultyTextField = PickerTextField()
     private let difficultyPickerView = UIPickerView()
 
     private let startButton = UIButton()
@@ -53,6 +53,7 @@ private extension StartGameScreen {
         difficultyCaptionLabel.text = L.StartGame.difficultyCaptionLabelText
         difficultyTextField.font = UIFont.inputFont
         difficultyTextField.backgroundColor = .lightGray
+        difficultyTextField.textAlignment = .center
 
         startButton.setTitle(L.StartGame.startButtonText, for: .normal)
         startButton.backgroundColor = .green
@@ -104,7 +105,7 @@ private extension StartGameScreen {
 
     func setupObserving() {
         viewModel.selectedDifficulty.bindingTarget <~
-            difficultyPickerView.reactive.selections.combineLatest(with: viewModel.difficulties.signal).map { $0.1[$0.0.row] }
+            difficultyPickerView.reactive.selections.producer.combineLatest(with: viewModel.difficulties.producer).map { $0.1[$0.0.row] }
         startButton.reactive.pressed = CocoaAction(viewModel.startAction)
         difficultyTextField.reactive.text <~ viewModel.selectedDifficulty.map { $0.title }
         viewModel.name <~ nameTextField.reactive.continuousTextValues

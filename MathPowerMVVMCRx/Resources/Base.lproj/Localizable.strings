@@ -11,6 +11,9 @@
 "start_game.difficulty_caption_label_text" = "Choose game difficulty?";
 "start_game.start_button_text" = "Start Game";
 
+// Game Screen
+"game.title" = "Game";
+
 // Scoreboard Screen
 "scoreboard.title" = "Scoreboard";
 

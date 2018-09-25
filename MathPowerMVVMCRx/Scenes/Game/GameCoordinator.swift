@@ -4,11 +4,11 @@ import Result
 import UIKit
 import Swinject
 
-enum StartGameCoordinatorResult {
+enum GameCoordinatorResult {
     case cancel
 }
 
-class StartGameCoordinator: Coordinator<StartGameCoordinatorResult> {
+class GameCoordinator: Coordinator<GameCoordinatorResult> {
     private let rootNavigationController: UINavigationController
     private let screenFactory: ScreenFactoryProtocol = Container.current.resolve(ScreenFactoryProtocol.self)!
     private let viewModelFactory: ViewModelFactoryProtocol = Container.current.resolve(ViewModelFactoryProtocol.self)!
@@ -18,14 +18,9 @@ class StartGameCoordinator: Coordinator<StartGameCoordinatorResult> {
         self.rootNavigationController = rootNavigationController
     }
 
-    override func start() -> SignalProducer<StartGameCoordinatorResult, NoError> {
-        let (_, scene) = screenFactory.startGameScreen()
-        let viewModel = viewModelFactory.startGameViewModel()
-
-        viewModel.startAction.completed.observeValues { [weak self] _ in
-            self?.showGame()
-        }
-
+    override func start() -> SignalProducer<GameCoordinatorResult, NoError> {
+        let (_, scene) = screenFactory.gameScreen()
+        let viewModel = viewModelFactory.gameViewModel()
         scene.connectViewModel(viewModel)
         rootNavigationController.pushViewController(scene, animated: true)
         return viewModel.backAction.values.producer

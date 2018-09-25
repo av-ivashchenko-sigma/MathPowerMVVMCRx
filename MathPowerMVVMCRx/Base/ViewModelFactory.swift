@@ -4,6 +4,7 @@ protocol ViewModelFactoryProtocol {
     func menuViewModel() -> MenuViewModel
     func scoreboardViewModel() -> ScoreboardViewModel
     func startGameViewModel() -> StartGameViewModel
+    func gameViewModel() -> GameViewModel
 }
 
 class ViewModelFactory: ViewModelFactoryProtocol {
@@ -17,5 +18,9 @@ class ViewModelFactory: ViewModelFactoryProtocol {
 
     func startGameViewModel() -> StartGameViewModel {
         return StartGameViewModel()
+    }
+
+    func gameViewModel() -> GameViewModel {
+        return GameViewModel()
     }
 }

@@ -42,6 +42,10 @@
 		48B7F8C7215A65A300B05804 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C6215A65A300B05804 /* UIFont+Extensions.swift */; };
 		48B7F8CA215A6FE300B05804 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C9215A6FE300B05804 /* Difficulty.swift */; };
 		48B7F8CE215A75E300B05804 /* Difficulty+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */; };
+		48B7F8D0215A8A8D00B05804 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8CF215A8A8D00B05804 /* PickerTextField.swift */; };
+		48B7F8D5215A8BCE00B05804 /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8D2215A8BCE00B05804 /* GameScreen.swift */; };
+		48B7F8D6215A8BCE00B05804 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8D3215A8BCE00B05804 /* GameCoordinator.swift */; };
+		48B7F8D7215A8BCE00B05804 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8D4215A8BCE00B05804 /* GameViewModel.swift */; };
 		8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */; };
 		8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,6 +103,10 @@
 		48B7F8C6215A65A300B05804 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		48B7F8C9215A6FE300B05804 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Difficulty+Extensions.swift"; sourceTree = "<group>"; };
+		48B7F8CF215A8A8D00B05804 /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+		48B7F8D2215A8BCE00B05804 /* GameScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
+		48B7F8D3215A8BCE00B05804 /* GameCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		48B7F8D4215A8BCE00B05804 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.release.xcconfig"; sourceTree = "<group>"; };
 		B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +196,7 @@
 				48B7F8772159047800B05804 /* AppCoordinator.swift */,
 				48B7F8722158ED5300B05804 /* Menu */,
 				48B7F8B02159342400B05804 /* StartGame */,
+				48B7F8D1215A8BCE00B05804 /* Game */,
 				48B7F8B12159342D00B05804 /* Scoreboard */,
 			);
 			path = Scenes;
@@ -262,6 +271,7 @@
 				48B7F8B8215936FE00B05804 /* StartGameCoordinator.swift */,
 				48B7F8BA215936FE00B05804 /* StartGameScreen.swift */,
 				48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */,
+				48B7F8CF215A8A8D00B05804 /* PickerTextField.swift */,
 			);
 			path = StartGame;
 			sourceTree = "<group>";
@@ -299,6 +309,16 @@
 				48B7F8CD215A75E300B05804 /* Difficulty+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		48B7F8D1215A8BCE00B05804 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8D2215A8BCE00B05804 /* GameScreen.swift */,
+				48B7F8D3215A8BCE00B05804 /* GameCoordinator.swift */,
+				48B7F8D4215A8BCE00B05804 /* GameViewModel.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		74E2EED83E53AEF1632F6DB0 /* Pods */ = {
@@ -575,7 +595,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B7F8BB215936FE00B05804 /* StartGameCoordinator.swift in Sources */,
+				48B7F8D5215A8BCE00B05804 /* GameScreen.swift in Sources */,
 				48B7F8C5215A376200B05804 /* Container+Assembly.swift in Sources */,
+				48B7F8D0215A8A8D00B05804 /* PickerTextField.swift in Sources */,
 				48B7F8842159157500B05804 /* ViewModel.swift in Sources */,
 				48B7F8AC2159328C00B05804 /* Action+Extensions.swift in Sources */,
 				48B7F8A521592A2D00B05804 /* Colors.swift in Sources */,
@@ -592,8 +614,10 @@
 				48B7F8B5215935FF00B05804 /* ScoreboardViewModel.swift in Sources */,
 				48B7F8CE215A75E300B05804 /* Difficulty+Extensions.swift in Sources */,
 				48B7F8AF215932EC00B05804 /* Functions.swift in Sources */,
+				48B7F8D7215A8BCE00B05804 /* GameViewModel.swift in Sources */,
 				48B7F8712158E3D000B05804 /* Coordinator.swift in Sources */,
 				48B7F8B7215936CB00B05804 /* ScoreboardScreen.swift in Sources */,
+				48B7F8D6215A8BCE00B05804 /* GameCoordinator.swift in Sources */,
 				48B7F876215903EF00B05804 /* MenuScreen.swift in Sources */,
 				48B7F87E2159124400B05804 /* ViewModelFactory.swift in Sources */,
 				48B7F8BD215936FE00B05804 /* StartGameScreen.swift in Sources */,

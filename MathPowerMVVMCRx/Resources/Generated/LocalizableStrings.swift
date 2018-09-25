@@ -17,6 +17,11 @@ internal enum L {
     internal static let medium = L.tr("Localizable", "difficulty.medium")
   }
 
+  internal enum Game {
+    /// Game
+    internal static let title = L.tr("Localizable", "game.title")
+  }
+
   internal enum Menu {
     /// Math Power
     internal static let logoTitle = L.tr("Localizable", "menu.logo_title")
