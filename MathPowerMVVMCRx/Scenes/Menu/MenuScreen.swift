@@ -5,6 +5,11 @@ import ReactiveCocoa
 import SnapKit
 
 class MenuScreen: Screen {
+    var viewModel: MenuViewModelProtocol {
+        guard let _viewModel = _viewModel as? MenuViewModelProtocol else { fatalError("viewModel is not MenuViewModelProtocol") }
+        return _viewModel
+    }
+
     private let titleLabel = UILabel()
     private let startGameButton = UIButton()
     private let scoreboardButton = UIButton()
@@ -16,6 +21,7 @@ class MenuScreen: Screen {
         setupStyle()
         setupContent()
         setupLayout()
+        setupObserving()
     }
 }
 
@@ -35,6 +41,7 @@ private extension MenuScreen {
     }
 
     func setupContent() {
+        title = L.Menu.title
         titleLabel.text = L.Menu.logoTitle
         startGameButton.setTitle(L.Menu.startGameTitle, for: .normal)
         scoreboardButton.setTitle(L.Menu.scoreboardTitle, for: .normal)
@@ -55,5 +62,10 @@ private extension MenuScreen {
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(40)
         }
+    }
+
+    func setupObserving() {
+        startGameButton.reactive.pressed = CocoaAction(viewModel.showStartGameAction)
+        scoreboardButton.reactive.pressed = CocoaAction(viewModel.showScoreboardAction)
     }
 }

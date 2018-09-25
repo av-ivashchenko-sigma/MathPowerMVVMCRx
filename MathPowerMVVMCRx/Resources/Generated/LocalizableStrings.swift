@@ -15,6 +15,18 @@ internal enum L {
     internal static let scoreboardTitle = L.tr("Localizable", "menu.scoreboard_title")
     /// Start Game
     internal static let startGameTitle = L.tr("Localizable", "menu.start_game_title")
+    /// Menu
+    internal static let title = L.tr("Localizable", "menu.title")
+  }
+
+  internal enum Scoreboard {
+    /// Scoreboard
+    internal static let title = L.tr("Localizable", "scoreboard.title")
+  }
+
+  internal enum StartGame {
+    /// Start Game
+    internal static let title = L.tr("Localizable", "start_game.title")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name

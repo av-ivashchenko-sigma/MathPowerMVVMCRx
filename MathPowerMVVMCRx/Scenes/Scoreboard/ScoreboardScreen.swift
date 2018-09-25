@@ -11,6 +11,7 @@ class ScoreboardScreen: Screen {
         setupStyle()
         setupContent()
         setupLayout()
+        setupObserving()
     }
 }
 
@@ -20,14 +21,18 @@ private extension ScoreboardScreen {
     }
 
     func setupStyle() {
-
+        view.backgroundColor = .blue
     }
 
     func setupContent() {
-
+        title = L.Scoreboard.title
     }
 
     func setupLayout() {
+
+    }
+
+    func setupObserving() {
 
     }
 }

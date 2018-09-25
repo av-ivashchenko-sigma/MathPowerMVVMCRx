@@ -36,6 +36,9 @@
 		48B7F8BC215936FE00B05804 /* StartGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */; };
 		48B7F8BD215936FE00B05804 /* StartGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8BA215936FE00B05804 /* StartGameScreen.swift */; };
 		48B7F8BF2159388100B05804 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8BE2159388100B05804 /* CoordinatorFactory.swift */; };
+		48B7F8C1215A364700B05804 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C0215A364700B05804 /* DI.swift */; };
+		48B7F8C3215A371F00B05804 /* DI+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C2215A371F00B05804 /* DI+App.swift */; };
+		48B7F8C5215A376200B05804 /* Container+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8C4215A376200B05804 /* Container+Assembly.swift */; };
 		8B8AA4109E430E3F3A909CDA /* Pods_MathPowerMVVMCRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */; };
 		8D9832C725CF83D6E5931095 /* Pods_MathPowerMVVMCRxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD7BCE6EDBFA99C5BFFCC2 /* Pods_MathPowerMVVMCRxTests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +90,9 @@
 		48B7F8B9215936FE00B05804 /* StartGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewModel.swift; sourceTree = "<group>"; };
 		48B7F8BA215936FE00B05804 /* StartGameScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameScreen.swift; sourceTree = "<group>"; };
 		48B7F8BE2159388100B05804 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		48B7F8C0215A364700B05804 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		48B7F8C2215A371F00B05804 /* DI+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI+App.swift"; sourceTree = "<group>"; };
+		48B7F8C4215A376200B05804 /* Container+Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Assembly.swift"; sourceTree = "<group>"; };
 		8FF9A053B1646033DF956CBB /* Pods_MathPowerMVVMCRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathPowerMVVMCRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E73B954F37D610E287501E /* Pods-MathPowerMVVMCRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRx/Pods-MathPowerMVVMCRx.release.xcconfig"; sourceTree = "<group>"; };
 		B40D3DDFB840E97B514C68DF /* Pods-MathPowerMVVMCRxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathPowerMVVMCRxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathPowerMVVMCRxTests/Pods-MathPowerMVVMCRxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				48B7F8AB2159328C00B05804 /* Action+Extensions.swift */,
+				48B7F8C2215A371F00B05804 /* DI+App.swift */,
+				48B7F8C4215A376200B05804 /* Container+Assembly.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				48B7F8AE215932EC00B05804 /* Functions.swift */,
+				48B7F8C0215A364700B05804 /* DI.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -287,9 +296,9 @@
 			buildConfigurationList = 483C31DC215522BE00D05452 /* Build configuration list for PBXNativeTarget "MathPowerMVVMCRx" */;
 			buildPhases = (
 				3946CE550F3516D594008CB3 /* [CP] Check Pods Manifest.lock */,
-				483C31BB215522B900D05452 /* Sources */,
-				48B7F8982159242000B05804 /* SwiftGen */,
 				488F409A2155290E003ADDA3 /* SwiftLint */,
+				48B7F8982159242000B05804 /* SwiftGen */,
+				483C31BB215522B900D05452 /* Sources */,
 				483C31BC215522B900D05452 /* Frameworks */,
 				483C31BD215522B900D05452 /* Resources */,
 				2B9353E95764F2F80273922F /* [CP] Embed Pods Frameworks */,
@@ -399,6 +408,8 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -406,6 +417,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -453,13 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftLint;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,13 +480,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftGen;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,12 +542,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B7F8BB215936FE00B05804 /* StartGameCoordinator.swift in Sources */,
+				48B7F8C5215A376200B05804 /* Container+Assembly.swift in Sources */,
 				48B7F8842159157500B05804 /* ViewModel.swift in Sources */,
 				48B7F8AC2159328C00B05804 /* Action+Extensions.swift in Sources */,
 				48B7F8A521592A2D00B05804 /* Colors.swift in Sources */,
 				48B7F8A421592A2D00B05804 /* Assets.swift in Sources */,
 				483C31C3215522B900D05452 /* AppDelegate.swift in Sources */,
+				48B7F8C1215A364700B05804 /* DI.swift in Sources */,
 				48B7F87B2159061300B05804 /* ScreenFactory.swift in Sources */,
+				48B7F8C3215A371F00B05804 /* DI+App.swift in Sources */,
 				48B7F8742158EDA800B05804 /* MenuCoordinator.swift in Sources */,
 				48B7F8BC215936FE00B05804 /* StartGameViewModel.swift in Sources */,
 				48B7F8BF2159388100B05804 /* CoordinatorFactory.swift in Sources */,

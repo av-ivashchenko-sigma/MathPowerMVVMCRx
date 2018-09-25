@@ -11,6 +11,7 @@ class StartGameScreen: Screen {
         setupStyle()
         setupContent()
         setupLayout()
+        setupObserving()
     }
 }
 
@@ -20,14 +21,18 @@ private extension StartGameScreen {
     }
 
     func setupStyle() {
-
+        view.backgroundColor = .yellow
     }
 
     func setupContent() {
-
+        title = L.StartGame.title
     }
 
     func setupLayout() {
+
+    }
+
+    func setupObserving() {
 
     }
 }

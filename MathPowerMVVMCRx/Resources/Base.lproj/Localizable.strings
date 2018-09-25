@@ -1,4 +1,11 @@
 // Menu Screen
+"menu.title" = "Menu";
 "menu.logo_title" = "Math Power";
 "menu.start_game_title" = "Start Game";
 "menu.scoreboard_title" = "Scoreboard";
+
+//Scoreboard Screen
+"scoreboard.title" = "Scoreboard";
+
+//Start Game Screen
+"start_game.title" = "Start Game";

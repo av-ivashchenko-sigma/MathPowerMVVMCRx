@@ -2,6 +2,7 @@ import ReactiveSwift
 import ReactiveCocoa
 import Result
 import UIKit
+import Swinject
 
 enum StartGameCoordinatorResult {
     case cancel
@@ -9,13 +10,12 @@ enum StartGameCoordinatorResult {
 
 class StartGameCoordinator: Coordinator<StartGameCoordinatorResult> {
     private let rootNavigationController: UINavigationController
-    private let screenFactory: ScreenFactoryProtocol
-    private let viewModelFactory: ViewModelFactoryProtocol
+    private let screenFactory: ScreenFactoryProtocol = Container.current.resolve(ScreenFactoryProtocol.self)!
+    private let viewModelFactory: ViewModelFactoryProtocol = Container.current.resolve(ViewModelFactoryProtocol.self)!
+    private let coordinatorFactory: CoordinatorFactoryProtocol = Container.current.resolve(CoordinatorFactoryProtocol.self)!
 
-    init(rootNavigationController: UINavigationController, screenFactory: ScreenFactoryProtocol, viewModelFactory: ViewModelFactoryProtocol) {
+    init(rootNavigationController: UINavigationController) {
         self.rootNavigationController = rootNavigationController
-        self.screenFactory = screenFactory
-        self.viewModelFactory = viewModelFactory
     }
 
     override func start() -> SignalProducer<StartGameCoordinatorResult, NoError> {
