@@ -22,9 +22,7 @@ class StartGameCoordinator: Coordinator<StartGameCoordinatorResult> {
         let (_, scene) = screenFactory.startGameScreen()
         let viewModel = viewModelFactory.startGameViewModel()
 
-        viewModel.startAction.completed.observeValues { [weak self] _ in
-            self?.showGame()
-        }
+        viewModel.startAction.completed.observeValues { [weak self] _ in self?.showGame() }
 
         scene.connectViewModel(viewModel)
         rootNavigationController.pushViewController(scene, animated: true)
@@ -32,5 +30,12 @@ class StartGameCoordinator: Coordinator<StartGameCoordinatorResult> {
             .map { _ in return .cancel }
             .on(event: { [weak self] _ in self?.rootNavigationController.dismiss(animated: true) }
         )
+    }
+}
+
+extension StartGameCoordinator {
+    func showGame() {
+        let gameCoordinator = coordinatorFactory.gameCoordinator(rootNavigationController: rootNavigationController)
+        coordinate(to: gameCoordinator).start()
     }
 }

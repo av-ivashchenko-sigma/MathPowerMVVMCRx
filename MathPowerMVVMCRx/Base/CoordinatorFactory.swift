@@ -4,6 +4,7 @@ protocol CoordinatorFactoryProtocol {
     func menuCoordinator(window: UIWindow) -> MenuCoordinator
     func scoreboardCoordinator(rootNavigationController: UINavigationController) -> ScoreboardCoordinator
     func startGameCoordinator(rootNavigationController: UINavigationController) -> StartGameCoordinator
+    func gameCoordinator(rootNavigationController: UINavigationController) -> GameCoordinator
 }
 
 class CoordinatorFactory: CoordinatorFactoryProtocol {
@@ -25,5 +26,9 @@ class CoordinatorFactory: CoordinatorFactoryProtocol {
 
     func startGameCoordinator(rootNavigationController: UINavigationController) -> StartGameCoordinator {
         return StartGameCoordinator(rootNavigationController: rootNavigationController)
+    }
+
+    func gameCoordinator(rootNavigationController: UINavigationController) -> GameCoordinator {
+        return GameCoordinator(rootNavigationController: rootNavigationController)
     }
 }
