@@ -10,6 +10,7 @@ target 'MathPowerMVVMCRx' do
   pod 'SwiftGen', '5.3.0'
   pod 'SnapKit', '~> 4.0.0'
   pod 'SwinjectAutoregistration'
+  pod 'RealmSwift'
 
   target 'MathPowerMVVMCRxTests' do
     inherit! :search_paths

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D51984C684C143FC219DFE08D17FA57E"
+               BlueprintIdentifier = "96B5AD59B6756267A2F7218C783CAEC6"
                BuildableName = "Pods_MathPowerMVVMCRx.framework"
                BlueprintName = "Pods-MathPowerMVVMCRx"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D51984C684C143FC219DFE08D17FA57E"
+            BlueprintIdentifier = "96B5AD59B6756267A2F7218C783CAEC6"
             BuildableName = "Pods_MathPowerMVVMCRx.framework"
             BlueprintName = "Pods-MathPowerMVVMCRx"
             ReferencedContainer = "container:Pods.xcodeproj">

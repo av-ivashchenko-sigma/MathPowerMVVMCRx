@@ -3,6 +3,11 @@ PODS:
     - ReactiveSwift (~> 4.0)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
+  - Realm (3.7.5):
+    - Realm/Headers (= 3.7.5)
+  - Realm/Headers (3.7.5)
+  - RealmSwift (3.7.5):
+    - Realm (= 3.7.5)
   - Result (4.0.0)
   - SnapKit (4.0.0)
   - SwiftGen (5.3.0)
@@ -14,6 +19,7 @@ PODS:
 DEPENDENCIES:
   - ReactiveCocoa
   - ReactiveSwift
+  - RealmSwift
   - SnapKit (~> 4.0.0)
   - SwiftGen (= 5.3.0)
   - SwiftLint
@@ -22,6 +28,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ReactiveCocoa: 87cb64d78424d749a0bbfd9b07e4825e8d834066
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
+  RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
@@ -29,6 +37,6 @@ SPEC CHECKSUMS:
   Swinject: f7f15a9672e99328c1f07f277091087917215700
   SwinjectAutoregistration: d06b56bd8f912b9fb9c59c15181342558a734b1b
 
-PODFILE CHECKSUM: c212e69ed5a1f34dbe3ac61a441cea1e293369fa
+PODFILE CHECKSUM: b5ac9bfd744d1717ccf7ec1b5b442f5a7b08f6e0
 
 COCOAPODS: 1.4.0

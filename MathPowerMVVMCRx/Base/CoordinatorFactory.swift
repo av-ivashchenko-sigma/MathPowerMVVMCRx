@@ -1,4 +1,5 @@
 import UIKit
+import Swinject
 
 protocol CoordinatorFactoryProtocol {
     func menuCoordinator(window: UIWindow) -> MenuCoordinator
@@ -8,13 +9,8 @@ protocol CoordinatorFactoryProtocol {
 }
 
 class CoordinatorFactory: CoordinatorFactoryProtocol {
-    private let screenFactory: ScreenFactoryProtocol
-    private let viewModelFactory: ViewModelFactoryProtocol
-
-    init(screenFactory: ScreenFactoryProtocol, viewModelFactory: ViewModelFactoryProtocol) {
-        self.screenFactory = screenFactory
-        self.viewModelFactory = viewModelFactory
-    }
+    private let screenFactory: ScreenFactoryProtocol = Container.current.resolve(ScreenFactoryProtocol.self)!
+    private let viewModelFactory: ViewModelFactoryProtocol = Container.current.resolve(ViewModelFactoryProtocol.self)!
 
     func menuCoordinator(window: UIWindow) -> MenuCoordinator {
         return MenuCoordinator(window: window)

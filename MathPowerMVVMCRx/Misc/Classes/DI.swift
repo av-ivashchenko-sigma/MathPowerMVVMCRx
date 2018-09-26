@@ -8,6 +8,7 @@ private struct UtilityServicesAssembly: Assembly {
 
 private struct DomainServicesAssembly: Assembly {
     func assemble(container: Container) {
+        container.autoregister(ScoreboardDomainServiceProtocol.self, initializer: ScoreboardDomainService.init).inObjectScope(.container)
     }
 }
 
