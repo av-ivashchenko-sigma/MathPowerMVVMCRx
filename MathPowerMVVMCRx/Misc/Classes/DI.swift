@@ -12,6 +12,12 @@ private struct DomainServicesAssembly: Assembly {
     }
 }
 
+private struct StorageServicesAssembly: Assembly {
+    func assemble(container: Container) {
+        container.autoregister(RealmServiceProtocol.self, initializer: RealmService.init).inObjectScope(.container)
+    }
+}
+
 private struct FactoryAssembly: Assembly {
     func assemble(container: Container) {
         container.autoregister(ViewModelFactoryProtocol.self, initializer: ViewModelFactory.init).inObjectScope(.container)
@@ -23,5 +29,6 @@ private struct FactoryAssembly: Assembly {
 public let assemblies: [Assembly] = [
     UtilityServicesAssembly(),
     DomainServicesAssembly(),
+    StorageServicesAssembly(),
     FactoryAssembly()
 ]

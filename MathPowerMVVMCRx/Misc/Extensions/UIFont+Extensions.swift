@@ -16,4 +16,8 @@ extension UIFont {
     static var cellBoldFont: UIFont {
         return UIFont.boldSystemFont(ofSize: 15)
     }
+
+    static var buttonFont: UIFont {
+        return UIFont.boldSystemFont(ofSize: 14)
+    }
 }

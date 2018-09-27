@@ -30,13 +30,27 @@ extension RealmService: RealmServiceProtocol {
     }
 
     func syncScores() {
-//        _scores.value = Array(realm.objects(Score.self))
+        _scores.value = Array(realm.objects(Score.self))
+
+        // for testing purposes
+        _scores.value = {
+            (1...50).map { value in
+                let difficulty: Difficulty = {
+                    switch value {
+                    case let one where one % 3 == 0: return .easy
+                    case let two where two % 2 == 0: return .medium
+                    default: return .hard
+                    }
+                }()
+                return Score(username: "User #\(value)", difficulty: difficulty, score: value * value)
+            }
+        }()
     }
 
     func saveScore(_ score: Score) {
         // swiftlint:disable:next force_try
         try! realm.write {
-//            realm.create(Score.self, value: score.realmValue, update: true)
+            realm.create(Score.self, value: score.realmValue, update: true)
         }
     }
 }

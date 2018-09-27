@@ -29,8 +29,12 @@ private extension ScoreboardScreen {
     }
 
     func setupStyle() {
-        view.backgroundColor = .blue
+        view.backgroundColor = .black
         tableView.backgroundColor = .clear
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
     func setupContent() {
@@ -55,7 +59,12 @@ private extension ScoreboardScreen {
     }
 
     func setupObserving() {
-        viewModel.cellsViewModels.producer.startWithValues { [weak self] _ in self?.tableView.reloadData() }
+        viewModel.cellsViewModels.producer.startWithValues { [weak self] _ in
+            self?.tableView.reloadData()
+        }
+        viewModel.difficultySelectionViewModel.producer.startWithValues { [weak self] difficultySelectionViewModel in
+            self?.difficultySelectionView.setup(viewModel: difficultySelectionViewModel)
+        }
     }
 }
 

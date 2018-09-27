@@ -19,7 +19,7 @@ class ScoreTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setup(viewModel: ScoreCellViewModel) {
+    func setup(viewModel: ScoreCellViewModelProtocol) {
         reactive.lifetime += nameLabel.reactive.text <~ viewModel.name
         reactive.lifetime += scoreLabel.reactive.text <~ viewModel.score.map { "\($0)"}
     }

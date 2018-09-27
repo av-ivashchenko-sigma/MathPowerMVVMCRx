@@ -1,6 +1,6 @@
 import Foundation
 
-enum Difficulty: CaseIterable {
+@objc enum Difficulty: Int, CaseIterable {
     case easy
     case medium
     case hard
