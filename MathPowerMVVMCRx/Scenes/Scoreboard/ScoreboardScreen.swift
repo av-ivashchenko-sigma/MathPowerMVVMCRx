@@ -55,7 +55,7 @@ private extension ScoreboardScreen {
     }
 
     func setupObserving() {
-        viewModel.scores.producer.startWithValues { [weak self] _ in self?.tableView.reloadData() }
+        viewModel.cellsViewModels.producer.startWithValues { [weak self] _ in self?.tableView.reloadData() }
     }
 }
 
@@ -65,11 +65,14 @@ extension ScoreboardScreen: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.scores.value?.count ?? 0
+        return viewModel.cellsViewModels.value?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return ScoreTableViewCell()
+        guard let cell = tableView.dequeueCell(ScoreTableViewCell.self),
+            let cellViewModel = viewModel.cellsViewModels.value?[indexPath.row] else { fatalError() }
+        cell.setup(viewModel: cellViewModel)
+        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

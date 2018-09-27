@@ -5,7 +5,7 @@ import ReactiveCocoa
 import Swinject
 
 protocol ScoreboardViewModelProtocol {
-    var scores: MutableProperty<[Score]?> { get }
+    var cellsViewModels: MutableProperty<[ScoreCellViewModel]?> { get }
     var selectedDifficulty: MutableProperty<Difficulty> { get }
     var backAction: Action<(), (), NoError> { get }
 }
@@ -13,7 +13,7 @@ protocol ScoreboardViewModelProtocol {
 class ScoreboardViewModel: ViewModel, ScoreboardViewModelProtocol {
     private let scoreboardDomainService: ScoreboardDomainServiceProtocol = Container.current.resolve(ScoreboardDomainServiceProtocol.self)!
 
-    let scores = MutableProperty<[Score]?>(nil)
+    let cellsViewModels = MutableProperty<[ScoreCellViewModel]?>(nil)
     let selectedDifficulty = MutableProperty<Difficulty>(.easy)
 
     private(set) lazy var backAction: Action<(), (), NoError> = {

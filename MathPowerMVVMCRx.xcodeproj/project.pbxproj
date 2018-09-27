@@ -17,6 +17,7 @@
 		484CBE56215BE3F7002E907A /* DifficultySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CBE55215BE3F7002E907A /* DifficultySelectionView.swift */; };
 		484CBE58215BE4C3002E907A /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CBE57215BE4C3002E907A /* UITableView+Extensions.swift */; };
 		484CBE5B215BE88A002E907A /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CBE5A215BE88A002E907A /* ScoreTableViewCell.swift */; };
+		484CBE5E215CE2C2002E907A /* ScoreCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484CBE5D215CE2C2002E907A /* ScoreCellViewModel.swift */; };
 		48B7F8712158E3D000B05804 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8702158E3D000B05804 /* Coordinator.swift */; };
 		48B7F8742158EDA800B05804 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F8732158EDA800B05804 /* MenuCoordinator.swift */; };
 		48B7F876215903EF00B05804 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7F875215903EF00B05804 /* MenuScreen.swift */; };
@@ -81,6 +82,7 @@
 		484CBE55215BE3F7002E907A /* DifficultySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelectionView.swift; sourceTree = "<group>"; };
 		484CBE57215BE4C3002E907A /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		484CBE5A215BE88A002E907A /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		484CBE5D215CE2C2002E907A /* ScoreCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCellViewModel.swift; sourceTree = "<group>"; };
 		48B7F8702158E3D000B05804 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		48B7F8732158EDA800B05804 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		48B7F875215903EF00B05804 /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
@@ -247,6 +249,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		484CBE5C215CE2AB002E907A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */,
+				484CBE5D215CE2C2002E907A /* ScoreCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4870852C21552D6600E10566 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,11 +362,11 @@
 		48B7F8B12159342D00B05804 /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				484CBE5C215CE2AB002E907A /* ViewModels */,
 				484CBE54215BE3E4002E907A /* Views */,
 				48293282215BACFE00080F9D /* Models */,
 				48B7F8B22159344E00B05804 /* ScoreboardCoordinator.swift */,
 				48B7F8B6215936CB00B05804 /* ScoreboardScreen.swift */,
-				48B7F8B4215935FF00B05804 /* ScoreboardViewModel.swift */,
 			);
 			path = Scoreboard;
 			sourceTree = "<group>";
@@ -675,6 +686,7 @@
 				48B7F8BB215936FE00B05804 /* StartGameCoordinator.swift in Sources */,
 				48B7F8D5215A8BCE00B05804 /* GameScreen.swift in Sources */,
 				4829328D215BD4BE00080F9D /* RealmStorage.swift in Sources */,
+				484CBE5E215CE2C2002E907A /* ScoreCellViewModel.swift in Sources */,
 				48B7F8C5215A376200B05804 /* Container+Assembly.swift in Sources */,
 				48B7F8D0215A8A8D00B05804 /* PickerTextField.swift in Sources */,
 				48B7F8842159157500B05804 /* ViewModel.swift in Sources */,
